@@ -1,0 +1,10 @@
+{
+    "name": "MessageCrawler",
+    "type": "module",
+    "lockfileVersion": 2,
+    "requires": true,
+    "packages": {},
+    "dependencies": {
+        "node-fetch": "^3.3.2"
+    }
+}
