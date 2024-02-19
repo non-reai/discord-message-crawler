@@ -1,5 +1,6 @@
 import fetch from 'node-fetch'
 import fs from 'fs'
+//the above is only needed for nodejs, delete for browser
 
 const CHANNEL_ID = "" //channel id
 const STARTING_MESSAGE_ID = "" //the starting message
@@ -52,6 +53,7 @@ async function crawlChannel(messageId) {
 
 crawlChannel(STARTING_MESSAGE_ID)
 
+//delete anything below this if you are not on nodejs aswell
 process.on('SIGINT', function() {
     console.log("\nGracefully shutting down from SIGINT (Ctrl-C)" );
     console.log("Messages Crawled: "+messagesCrawled)
